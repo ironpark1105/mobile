@@ -4,8 +4,10 @@
     box-sizing: border-box;
 }
 :root{
-    --main-color1: #5B3535;
-    --main-color2: #AA7070;
+    --main-color1: #fff8f6;
+    --main-color2: #ffe1e1;
+    --main-color3: #353535;
+    --main-color4: #58635a;
 }
 ul{
     list-style-type: none;
@@ -20,11 +22,28 @@ body{
 #title{
     width: 100%;
     height: 100vh;
-    
     background: #fff;
+}
+#main-visual{
+  position: relative;
+  
+}
+.slider{
+  position: absolute;
+  width: 100%;
+  height: 424px;
+  margin: 0 auto;
+}
+.slider img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.5;
 }
 figure{
     position: relative;
+    
+    border-bottom: 5px solid var(--main-color2);
 }
 figcaption{
     position: absolute;
@@ -32,21 +51,20 @@ figcaption{
     left: 50%;
     transform: translate(-50%);
 }
+
 #title figure{
     width: 100%;
     height: 64vh;
-    background-image: url(../image/wedding.jpg);
-    background-size: cover;
-    background-position: center
 }
 
 #title figure figcaption span:last-child{
     font-size: 12px;
-    color: var(--main-color1);
+    color: var(--main-color3);
 }
 #title figure figcaption .date{
-    background: var(--main-color1);
-    color: #fff;
+    background: var(--main-color2);
+    color: var(--main-color3);
+    border: 1px solid pink;
     width: 54px;
     height: 54px;
     display: block;
@@ -63,7 +81,7 @@ figcaption{
 
 #title .title-info .name{
     text-align: right;
-    color: var(--main-color1);
+    color: var(--main-color3);
     font-weight: 500;
     padding-bottom: 4px;
     position: relative;
@@ -83,24 +101,30 @@ figcaption{
     margin-top: 80px;
     font-weight: bold;
     line-height: 24px;
-    color: var(--main-color1);
+    color: var(--main-color3);
 }
 /* 인삿말 */
 #intro{
+    width: 100%;
+    height: 543px;
+    position: relative;
     text-align: center;
     background: var(--main-color1);
-    color: #fff;
-    padding-top: 26px;
+    color: var(--main-color3);
+    background: url('../image/dec3.png');
+    background-size: cover ;
+    background-position: center;
+    
 }
+
 #intro h2{
-    color: white;
-    padding-top: 26px;
-    border-top: 2px solid var(--main-color2);
+    color: var(--main-color3);
+    padding-top: 40px;
 }
 .intro-box{
     padding-left: 43px;
     padding-right: 43px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 #intro p{
     font-size: 12px;
@@ -112,9 +136,10 @@ figcaption{
     justify-content: center;
     align-items: center;
 }
+
 #intro .guest-box .guest h3{
     font-size: 12px;
-    color: var(--main-color2);
+    color: var(--main-color3);
     padding-left: 68px;
 }
 #intro .guest-box .guest p {
@@ -129,7 +154,6 @@ figcaption{
     margin-left: 20px;
     padding-top: 16px;
 }
-
 /* 갤러리 346 */
 .gallery{
     text-align: center;
@@ -154,10 +178,11 @@ figcaption{
     width: 112px;
     height: 121px;
 }
-.gallery-box a{
-    color: var(--main-color1);
+.gallery em a{
+    color: var(--main-color3);
     font-size: 12px;
     float: right;
+    margin-right: 15px;
 }
 
 #big-img{
@@ -167,6 +192,20 @@ figcaption{
     width: 346px;
     height: 100%;
 }
+
+/* 유튜브 */
+#youtube{
+    width: 100%;
+    height: auto;
+    margin-top: 70px;
+}
+#youtube h2{
+    text-align: center;
+}
+#youtube iframe{
+    margin-top: 32px;
+}
+
 
 /* 오시는길 */
 #map{
@@ -202,10 +241,10 @@ padding-right: 15px;
 footer{
     width: 100%;
     height: 101px;
-    background-color: var(--main-color2);
+    background-color: var(--main-color1);
     margin-top: 52px;
     text-align: center;
-    color: white;
+    color: var(--main-color3);
 }
 footer h2{
     padding-top: 24px;
